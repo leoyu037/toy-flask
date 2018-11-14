@@ -6,5 +6,8 @@ setup(
     name='hello-flask-server',
     version='1.0',
     requires=['flask'],
-    install_requires=['flask>=0.10'],
+    install_requires=[
+        'flask>=0.10',
+        'ddtrace>=0.16.0',
+    ],
 )

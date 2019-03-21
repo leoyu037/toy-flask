@@ -3,8 +3,12 @@
 from setuptools import setup
 
 setup(
-    name='hello-flask-server',
+    name='toy-flask',
     version='1.0',
     requires=['flask'],
-    install_requires=['flask>=0.10'],
+    install_requires=[
+        'flask',
+        'ddtrace',
+        'pytest',
+    ],
 )

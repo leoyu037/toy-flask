@@ -5,14 +5,20 @@ This is a barebones flask setup. Includes:
 1. Alpine-based Dockerfile
 1. Docker-compose file to run 3 replicas behind an nginx loadbalancer
 
+Also includes Datadog APM and Logs integration, properly correlating logs with
+traces by injecting trace_ids into logs.
+
 ----------
 
 ## Requirements
 
 1. Docker
-1. Docker Compose (preinstalled w/ DOcker for Mac)
+1. Docker Compose (preinstalled w/ Docker for Mac)
 
 ## Starting the application
+
+(You'll also need a suitably configured Datadog agent to verify the
+tracing/logging behavior)
 
 ```bash
   docker-compose build

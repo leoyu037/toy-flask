@@ -2,11 +2,17 @@ version: '3'
 services:
   hello1:
     build: .
-    image: hello:local
+    image: toy-flask:local
+    environment:
+      datadog_agent_host: dd-agent
   hello2:
-    image: hello:local
+    image: toy-flask:local
+    environment:
+      datadog_agent_host: dd-agent
   hello3:
-    image: hello:local
+    image: toy-flask:local
+    environment:
+      datadog_agent_host: dd-agent
   nginx:
     image: nginx
     ports:

@@ -1,11 +1,11 @@
 #!/usr/bin/env python
 
-from setuptools import setup
+from setuptools import setup, find_packages
 
 setup(
     name='toy-flask',
     version='1.0',
-    requires=['flask'],
+    packages=find_packages(exclude=['test']),
     install_requires=[
         'flask',
         'ddtrace',

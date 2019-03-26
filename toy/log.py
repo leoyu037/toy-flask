@@ -14,7 +14,7 @@ def _format_datadog_log(level, message, logger='not_set', extra_fields=None, err
         'time': datetime.datetime.now().isoformat(),
         'status': level,
         'message': message,
-        'service': 'leo-test-in-code',
+        # 'service': 'not_set',
     }
 
     record['logger'] = {

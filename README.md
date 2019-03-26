@@ -22,5 +22,6 @@ tracing/logging behavior)
 
 ```bash
   docker-compose build
+  docker-compose run hello1 py.test
   docker-compose up
 ```
